@@ -9,6 +9,3 @@ ro.support_hide_display_cutout=true
 
 # Google keyboard
 ro.com.google.ime.kb_pad_port_b=10.4
-
-# Quick start
-ro.quick_start.device_id=husky
