@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "PixelWifiOverlay2023Shusky",
+    name: "PixelWifiOverlay2023",
     product_specific: true,
 }
