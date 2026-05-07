@@ -5,25 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# GMS/GAPPS
-WITH_GMS := true
-
 TARGET_SUPPORTED_REFRESH_RATES := 60,120
-
-SURFACE_FLINGER_BOOST := true
-$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
-$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
-
-TARGET_OPTIMIZED_DEXOPT := true
-
-# Build Pixel Launcher
-TARGET_INCLUDE_PIXEL_LAUNCHER := true
-
-# Include Google Telephony
-WITH_GMS_COMMS_SUITE := true
 
 # Include Chargeing Bypass
 BYPASS_CHARGE_SUPPORTED := true
