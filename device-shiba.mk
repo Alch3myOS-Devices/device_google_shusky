@@ -5,17 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_SUPPORTED_REFRESH_RATES := 60,120
-
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
-
-# Include Chargeing Bypass
-BYPASS_CHARGE_SUPPORTED := true
-
-# Supports HBM
-HBM_SUPPORTED := true
-HBM_NODE := /sys/class/backlight/panel0-backlight/hbm_mode
 
 # Pixel Kernel
 TARGET_LINUX_KERNEL_VERSION := 6.1
@@ -29,8 +20,6 @@ LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image.lz4
 LOCAL_PATH := device/google/shusky
 
 DEVICE_PACKAGE_OVERLAYS += device/google/shusky/shiba/overlay
-DEVICE_PACKAGE_OVERLAYS += device/google/shusky/shiba/overlay-lineage
-DEVICE_PACKAGE_OVERLAYS += device/google/shusky/overlay-lineage
 
 # Inherit from zuma
 include device/google/zuma/common.mk
@@ -43,7 +32,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlayVendorShusky \
     PixelNfcOverlayShusky \
-    PixelWifiOverlay2023 \
+    PixelWifiOverlay2023Shusky \
     SafetyRegulatoryInfoOverlayProductShusky
 
 PRODUCT_PACKAGES += \
