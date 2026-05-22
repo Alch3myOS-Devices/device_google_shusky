@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FrameworkResOverlayVendorShusky \
     PixelNfcOverlayShusky \
-    PixelWifiOverlay2023 \
+    PixelWifiOverlay2023Shusky \
     SafetyRegulatoryInfoOverlayProductShusky
 
 PRODUCT_PACKAGES += \

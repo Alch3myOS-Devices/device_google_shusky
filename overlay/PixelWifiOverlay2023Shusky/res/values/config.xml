@@ -4,6 +4,9 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+	<bool name="config_wifi_softap_owe_supported">true</bool>
+    <bool name="config_wifi_softap_owe_transition_supported">true</bool>
+
 	<bool name="config_tether_bridge_enabled">false</bool>
     <bool name="config_wifiSoftap24gSupported">true</bool>
     <bool name="config_wifiSoftap5gSupported">true</bool>
